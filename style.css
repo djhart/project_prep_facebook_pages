@@ -46,3 +46,33 @@ a img {
 }
 /* ***********END RESET*********** */
 
+.navbar {
+  width: 100%;
+  background-color: blue;
+  height: 4em;
+  position: relative;
+}
+.nav-logo {
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 2.5em;
+  position: absolute;
+  top: 50%;
+  margin: 0 0 0 .75em;
+  transform: translate(0,-50%);
+
+
+
+}
+.login {
+  float: right;
+  margin: 1.75em .5em 0 0;
+  display: flex;
+}
+.login div {
+  display: inline;
+}
+.login input[type="text"], label {
+  display: block;
+}

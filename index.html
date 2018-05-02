@@ -11,12 +11,18 @@
   </head>
   <body>
     <nav class="navbar">
-      <a class="nav-logo" href="/">Farcebook</a>
-      <ul class="login-list">
-        <li>Email</li>
-        <li>Password</li>
-        <li>Login</li>
-      </ul>
+      <a class="nav-logo" href="/" >Farcebook</a>
+      <form action="/" method="get" class="login">
+        <div class="login-email">
+          <label for="email" >Email</label>
+          <input name="email" type="text" value=""/>
+        </div>
+        <div class="login-password">
+          <label for="password" >Password</label>
+          <input name="password" type="text" value=""/>
+        </div>
+        <input name="Log In" type="submit" value="Log In"/>
+      </form>
     </nav>
     <div class="main-container">
 
@@ -31,8 +37,8 @@
       </div>
 
       <div class="sign-up-container">
-        <!-- ADD SIGN UP FORM HERE  -->
-        <form action="/" method="get">
+        <h1>Sign Up<h1>
+        <form action="/" method="get" class="sign-up">
           <input name="fname" type="text" value="First Name"/>
           <input name="lname" type="text" value="Last Name"/><br/>
           <input name="email" type="text" value="Your Email"/><br/>
@@ -95,10 +101,8 @@
           <input name="gender" type="radio" value="Male"/> Male
           <input name="gender" type="radio" value="Female"/> Female<br/>
           <input name="submit" type="submit" value="Sign Up!"/>          
-
         </form>
       </div>
-
     </div>
   </body>
 </html>
