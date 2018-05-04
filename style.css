@@ -85,6 +85,7 @@ label {
   padding: 1.5em;
   margin: auto;
   display: flex;
+  justify-content: space-between;
 }
 .sign-up-container {
   background-color: #888;
@@ -93,12 +94,40 @@ label {
 }
 .splash {
   background-color: #489;
+  flex: 3 1 auto;
+  margin: 1em;
+}
+.splash h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.splash ul {
+  list-style: none;
+  margin: none;
+  padding: none;
+}
+.splash-copy li{
+  background-color: blue;
+  margin: .5em 0 0 1.5em;
+  font-size: 1.4em;
+}
+.splash-copy li:before {
+  content: "-";
+  padding-right: 8px;
 }
 .sign-up-container h1 {
-  font-size: 2em;
+  font-size: 2.5em;
+  flex: 2 1 auto;
 }
 .sign-up-container h3 {
   font-size: 1em;
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up input{
+  flex: 1 1 auto;
 }
 .sign-up-button {
   width: 100%;
